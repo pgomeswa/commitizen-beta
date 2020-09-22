@@ -5,9 +5,14 @@
   "repository": "https://github.com/pgomeswa/commitizen-beta.git",
   "author": "pgomesdev <pgomesdev@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "release": "HUSKY_SKIP_HOOKS=1 standard-version"
+  },
   "devDependencies": {
     "cz-conventional-changelog": "3.3.0",
-    "husky": "^4.3.0"
+    "husky": "^4.3.0",
+    "standard-version": "^9.0.0"
   },
   "config": {
     "commitizen": {
