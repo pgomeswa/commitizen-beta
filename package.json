@@ -1,0 +1,22 @@
+{
+  "name": "commitizen-beta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pgomeswa/commitizen-beta.git",
+  "author": "pgomesdev <pgomesdev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^4.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && node_modules/.bin/git-cz --hook || true"
+    }
+  }
+}
